@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-urdu: 'Noto Nastaliq Urdu', 'Gulzar', -apple-system, BlinkMacSystemFont, 'Segoe UI', Tahoma, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-display: 'Cinzel', 'Plus Jakarta Sans', Georgia, serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+}
+
+.font-urdu {
+  font-family: var(--font-urdu);
+  line-height: 1.8;
+  word-spacing: 1px;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Shape Manipulator Classes for Odoo Blocks */
+.shape-soft-curved {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  transition: border-radius 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.shape-square {
+  border-radius: 0px !important;
+  overflow: hidden;
+  transition: border-radius 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.shape-triangular-mask {
+  border-radius: 0.5rem;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 28px), calc(100% - 28px) 100%, 0 100%);
+  overflow: hidden;
+  transition: clip-path 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.shape-circular-canvas {
+  border-radius: 2.75rem;
+  overflow: hidden;
+  transition: border-radius 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Robust Position Locking Grid */
+.position-locked-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 500px), 1fr));
+  gap: 1.5rem;
+  align-items: stretch;
+  contain: layout;
+}
+
+.position-locked-cell {
+  contain: layout paint;
+  height: 100%;
+  min-height: 240px;
+  position: relative;
+}
+
+/* Universal hover edit trigger animation */
+.image-edit-overlay {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.group:hover .image-edit-overlay,
+.group:focus-within .image-edit-overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Hide scrollbar for category tabs while maintaining smooth scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

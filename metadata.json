@@ -1,0 +1,6 @@
+{
+  "name": "Dogar Sajji & Restaurant",
+  "description": "High-performance digital storefront, live Odoo block designer, compact portion system, and WhatsApp ordering for Dogar Sajji & Restaurant.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dogar Sajji & Restaurant | ڈوگر سجی اینڈ ریسٹورنٹ</title>
+  <meta name="description" content="Authentic Balochi Wood-Fired Charcoal Sajji & Shinwari Catalog in Lahore. Order via WhatsApp 0300-9346628.">
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            urdu: ['"Noto Nastaliq Urdu"', 'serif'],
+          },
+          colors: {
+            brand: {
+              orange: '#EA580C',
+              gold: '#D97706',
+              dark: '#0F172A',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    .font-urdu { font-family: 'Noto Nastaliq Urdu', serif; line-height: 1.8; }
+    /* Anti-collision isolation rules */
+    .hero-text-shield { word-break: keep-all; overflow-wrap: break-word; }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+</head>
+<body id="app-body" class="bg-white text-slate-900 min-h-screen flex flex-col font-sans selection:bg-amber-500 selection:text-white transition-colors duration-200">
+
+  <!-- ========================================================================= -->
+  <!-- VIEW 1: PUBLIC STOREFRONT (Continuous Stream, Anti-Collision Hero, Landmarks, Bottom Passport) -->
+  <!-- ========================================================================= -->
+  <div id="storefront-view" class="flex flex-col min-h-screen w-full">
+
+    <!-- 1. TOP NAVIGATION (Isolated zones, 3-dot kebab re-authentication) -->
+    <header class="sticky top-0 z-40 w-full bg-white/95 border-b border-slate-200 backdrop-blur-md transition-colors">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
+        <!-- Zone 1: Wordmark -->
+        <a href="#" class="font-black text-lg sm:text-xl tracking-tight text-slate-900 whitespace-nowrap shrink-0 flex items-center gap-2">
+          <span class="w-8 h-8 rounded-xl bg-amber-500 text-slate-950 flex items-center justify-center font-black text-sm shadow-sm">D</span>
+          <span id="nav-brand-title">Dogar Sajji & Restaurant</span>
+        </a>
+
+        <!-- Zone 2: Navigation Links -->
+        <nav class="hidden md:flex items-center gap-6 text-xs font-bold text-slate-600">
+          <a href="#menu" class="hover:text-amber-600 transition-colors">Continuous Menu / مینو</a>
+          <a href="#location" class="hover:text-amber-600 transition-colors">9 Landmarks & Delivery</a>
+          <a href="#owner-section" class="hover:text-amber-600 transition-colors">Founder Profile</a>
+        </nav>
+
+        <!-- Zone 3: Actions & 3-Dot Kebab -->
+        <div class="flex items-center gap-2.5 shrink-0">
+          <a id="nav-hotline-btn" href="https://wa.me/923009346628?text=Salam%2C%20I%20want%20to%20order%20from%20Dogar%20Sajji" target="_blank" class="px-3.5 py-2 rounded-xl bg-amber-600 hover:bg-amber-700 text-white text-xs font-bold shadow-xs flex items-center gap-1.5 transition-transform active:scale-95">
+            <span>📞</span>
+            <span class="hidden sm:inline">Hotline:</span>
+            <span id="nav-hotline-display" class="font-mono">0300-9346628</span>
+          </a>
+
+          <!-- Cart Tray Button -->
+          <button onclick="toggleCartDrawer(true)" class="p-2 rounded-xl border border-slate-200 bg-slate-50 text-slate-700 hover:bg-slate-100 relative cursor-pointer" title="View Cart">
+            🛒
+            <span id="cart-counter-badge" class="absolute -top-1.5 -right-1.5 w-5 h-5 rounded-full bg-amber-600 text-white text-[10px] font-black flex items-center justify-center shadow-xs">0</span>
+          </button>
+
+          <!-- 3-Dot Kebab Menu Gateway to Isolated Page 4 -->
+          <button onclick="openSecurityGateway()" class="p-2 rounded-xl border border-slate-200 bg-slate-50 text-slate-700 hover:text-amber-600 hover:bg-slate-100 cursor-pointer" title="Admin Gateway (3-Dot)">
+            ⋮
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- 2. ANTI-COLLISION HERO BANNER CANVAS -->
+    <section class="relative w-full overflow-hidden min-h-[520px] sm:min-h-[580px] flex flex-col justify-between bg-slate-950 text-white">
+      <!-- Background Scrim Image -->
+      <div class="absolute inset-0 z-0">
+        <img id="hero-wallpaper-img" src="/src/assets/images/hero_sajji_roast_banner_1790248382249.jpg" alt="Hero Roast" class="w-full h-full object-cover object-center opacity-40">
+        <div class="absolute inset-0 bg-gradient-to-b from-black/90 via-black/75 to-black/95"></div>
+      </div>
+
+      <!-- Defensive Foreground Flexbox -->
+      <div class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col justify-between flex-1 gap-8">
+        
+        <!-- Isolated Brand Header Row -->
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-white/15">
+          <div class="flex items-center gap-3.5 min-w-0">
+            <div class="w-16 h-16 sm:w-20 sm:h-20 min-w-[64px] max-w-[80px] rounded-2xl border-2 border-white/30 shadow-2xl bg-black/70 overflow-hidden shrink-0 flex items-center justify-center">
+              <img id="hero-logo-img" src="/src/assets/images/dogar_restaurant_logo_1790248394635.jpg" alt="Logo" class="w-full h-full object-cover">
+            </div>
+            <div class="flex flex-col justify-center min-w-0">
+              <div class="flex items-center gap-2">
+                <span class="text-[11px] font-black tracking-widest text-amber-400 font-mono">ESTD. LAHORE</span>
+                <span class="w-1 h-1 rounded-full bg-amber-400"></span>
+                <span class="text-[10px] text-emerald-400 font-bold uppercase">100% Daily Fresh Meat</span>
+              </div>
+              <h1 id="hero-title-en" class="text-base sm:text-xl font-black text-white truncate">Dogar Sajji & Restaurant</h1>
+              <span id="hero-title-ur" class="text-xs sm:text-sm font-urdu text-amber-300 font-bold" dir="rtl">ڈوگر سجّی اینڈ ریسٹورنٹ (قصور روڈ)</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="px-3.5 py-1.5 rounded-full bg-amber-500 text-slate-950 text-xs font-black uppercase shadow-md flex items-center gap-1.5">
+              🔥 Authentic Balochi Charcoal Sajji
+            </span>
+            <span class="px-3.5 py-1.5 rounded-full bg-black/60 border border-white/20 text-slate-200 text-xs font-semibold">
+              ⭐ Wood-Fired Shinwari Woks
+            </span>
+          </div>
+        </div>
+
+        <!-- Center Tagline -->
+        <div class="max-w-3xl space-y-3 py-4">
+          <h2 id="hero-tagline-en" class="text-2xl sm:text-4xl font-black tracking-tight leading-tight text-white">
+            Wood-Roasted Charcoal Sajji & Pure Shinwari Heritage
+          </h2>
+          <p id="hero-tagline-ur" class="text-base sm:text-lg font-urdu text-amber-300 font-bold leading-relaxed" dir="rtl">
+            خالص دیسی گھی کڑاہی، تازہ دمپخت سجی اور روایتی تندوری نان روزانہ دسترخوان پر حاضر
+          </p>
+        </div>
+
+        <!-- Hero Bottom Trust Chips -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t border-white/10 text-xs font-medium text-slate-300">
+          <div class="flex items-center gap-2">
+            <span class="text-emerald-400 font-bold">✓</span>
+            <span>Zero Frozen Meat</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-amber-400 font-bold">✓</span>
+            <span>Natural Acacia Wood Coals</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-sky-400 font-bold">✓</span>
+            <span>Free 5KM Home Delivery</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-purple-400 font-bold">✓</span>
+            <span>Valet Parking Available</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. CONTINUOUS MERGED CATALOG VIEWPORT STACK -->
+    <main id="menu" class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 py-12 space-y-16">
+      
+      <!-- Catalog Header -->
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3 pb-4 border-b border-slate-200">
+        <div>
+          <span class="text-xs font-extrabold uppercase tracking-wider text-amber-600">Merged 2-Page Continuous Stream Catalog</span>
+          <h2 class="text-2xl sm:text-3xl font-black tracking-tight text-slate-900">Authentic Balochi Sajji & Traditional Menu</h2>
+          <p class="text-sm font-urdu font-bold text-amber-600 mt-1" dir="rtl">
+            گروپ 1 (سجی و ڈیلز) اوپر اور مکمل روایتی مینو (کڑاہی، مٹن، بیف و نان) متصل نیچے
+          </p>
+        </div>
+        <div class="flex items-center gap-2 text-xs font-bold text-slate-500">
+          <span class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">100% Zabihah Halal</span>
+          <span class="px-3 py-1 rounded-full bg-amber-50 text-amber-700 border border-amber-200">Live WhatsApp Hotline</span>
+        </div>
+      </div>
+
+      <!-- Priority Group 1 (Main Sajji, Combos, Beverages) -->
+      <div class="space-y-6">
+        <div class="flex items-center justify-between pb-2 border-b border-slate-200">
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+            <h3 class="text-lg font-black tracking-tight text-slate-900">Group 1: Signature Balochi Sajji, Combos & Drinks</h3>
+          </div>
+          <span class="text-xs font-bold text-slate-400">Priority Stream</span>
+        </div>
+        <div id="group1-catalog-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Populated dynamically via JS -->
+        </div>
+      </div>
+
+      <!-- Seamless Catalog Divider -->
+      <div class="relative py-2 flex items-center justify-center">
+        <div class="absolute inset-0 flex items-center"><div class="w-full border-t border-dashed border-slate-300"></div></div>
+        <div class="relative px-5 py-2 rounded-2xl border border-slate-300 bg-slate-50 text-xs font-bold uppercase tracking-wider text-slate-700 shadow-xs flex items-center gap-2">
+          <span>Page 2 Extended Traditional Catalog Follows Directly Below</span>
+          <span class="font-urdu text-[11px] text-amber-600">روایتی دیسی کڑاہی و دسترخوان</span>
+        </div>
+      </div>
+
+      <!-- Extended Group 2 (Karahi, Mutton, Beef, Daal, Tandoor) -->
+      <div class="space-y-6">
+        <div class="flex items-center justify-between pb-2 border-b border-slate-200">
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+            <h3 class="text-lg font-black tracking-tight text-slate-900">Group 2: Desi Karahi, Prime Mutton, Beef & Fresh Tandoor</h3>
+          </div>
+          <span class="text-xs font-bold text-slate-400">Extended Traditional</span>
+        </div>
+        <div id="group2-catalog-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Populated dynamically via JS -->
+        </div>
+      </div>
+
+      <!-- 4. LOCATION & RADIUS SECTION: 9 LOCAL LANDMARKS + 5 KM FREE DELIVERY -->
+      <section id="location" class="space-y-6 scroll-mt-24">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-5 rounded-3xl bg-emerald-900 text-white shadow-md border border-emerald-700">
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="text-sm font-black uppercase tracking-wider">Free Delivery within a 5 KM Radius</span>
+              <span class="px-2 py-0.5 rounded-full bg-white text-emerald-900 text-[10px] font-extrabold">0 Rs Delivery Fee</span>
+            </div>
+            <p class="text-xs font-urdu text-emerald-200 mt-1 font-semibold" dir="rtl">5 کلومیٹر کے دائرے میں گرما گرم کھانے کی مفت ہوم ڈلیوری</p>
+          </div>
+          <a href="https://wa.me/923009346628?text=Salam%20Dogar%20Sajji%2C%20please%20check%20delivery%20radius%20for%20my%20location" target="_blank" class="px-4 py-2 rounded-xl bg-white text-emerald-900 text-xs font-black shrink-0 hover:bg-emerald-50 transition-all">
+            Check Radius on WhatsApp
+          </a>
+        </div>
+
+        <div class="p-6 sm:p-8 rounded-3xl border border-slate-200 bg-slate-50 space-y-6">
+          <div>
+            <h3 class="text-base font-extrabold text-slate-900">9 Verified Local Landmark Pins</h3>
+            <p class="text-xs text-slate-500">Click any landmark chip to copy location or lock into your delivery order:</p>
+          </div>
+
+          <div id="landmarks-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 5. ABSOLUTE BOTTOM PASSPORT-SIZE PICTURE FRAME (MUHAMMAD DOGAR) -->
+    <footer id="owner-section" class="w-full border-t border-slate-200 bg-slate-100 py-12 px-4 sm:px-6 mt-auto">
+      <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-6 sm:gap-8">
+        
+        <!-- Passport Frame -->
+        <div class="flex flex-col items-center shrink-0">
+          <div class="relative p-1.5 rounded-3xl bg-gradient-to-br from-amber-500 via-amber-700 to-amber-900 shadow-2xl border border-amber-400">
+            <div class="w-28 h-28 sm:w-36 sm:h-36 rounded-2xl overflow-hidden bg-slate-900 shadow-inner">
+              <img id="owner-portrait-img" src="/src/assets/images/owner_muhammad_dogar_1790250637041.jpg" alt="Muhammad Dogar" class="w-full h-full object-cover">
+            </div>
+            <div class="absolute -bottom-2.5 left-1/2 -translate-x-1/2 px-2.5 py-0.5 rounded-full bg-amber-500 text-slate-950 text-[10px] font-black uppercase whitespace-nowrap shadow-md">
+              Owner & Founder
+            </div>
+          </div>
+          <span class="text-[10px] font-mono text-slate-400 mt-4 uppercase tracking-wider">Verified Passport Record</span>
+        </div>
+
+        <!-- Narrative Details -->
+        <div class="flex-1 text-center md:text-left space-y-3">
+          <div>
+            <span class="text-[10px] font-black text-amber-600 uppercase tracking-widest block">Executive Leadership</span>
+            <div class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-3 justify-center md:justify-start">
+              <h3 id="owner-name-en" class="text-2xl font-black text-slate-900">Muhammad Dogar</h3>
+              <span id="owner-name-ur" class="text-xl font-urdu font-bold text-amber-600" dir="rtl">محمد ڈوگر</span>
+            </div>
+            <p id="owner-title-en" class="text-xs font-semibold text-slate-500">Founder, Owner & Master Pitmaster • <span id="owner-title-ur" class="font-urdu text-amber-600">بانی و سرپرست اعلیٰ</span></p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-white border border-slate-200 text-xs space-y-2 text-left">
+            <p id="owner-quote-en" class="text-slate-600 font-medium leading-relaxed">
+              "Serving authentic Balochi wood-roasted Sajji and pure Shinwari traditions with an uncompromising commitment to 100% daily fresh halal zabihah meat and hand-ground desi spices."
+            </p>
+            <p id="owner-quote-ur" class="font-urdu text-amber-600 font-semibold text-right" dir="rtl">
+              "ہماری اولین ترجیح خالص دیسی مسالوں اور روزانہ تازہ ذبیحہ کے ساتھ اصل بلوچی سجی کا روایتی ذائقہ آپ کے دسترخوان تک پہنچانا ہے۔"
+            </p>
+          </div>
+
+          <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 text-xs font-semibold text-slate-500 pt-1">
+            <span>✓ 100% Zabihah Halal</span>
+            <span>• Hotline: 0300-9346628</span>
+            <button onclick="openSecurityGateway()" class="text-amber-600 hover:underline cursor-pointer">Admin Gateway ⚙️</button>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- VIEW 2: ISOLATED STANDALONE PAGE 4 (OWNER CONTROL PANEL) -->
+  <!-- ========================================================================= -->
+  <div id="admin-standalone-view" class="hidden flex-col min-h-screen w-full bg-slate-100 text-slate-900">
+    
+    <!-- Top Command Strip -->
+    <header class="sticky top-0 z-40 w-full bg-slate-900 text-white border-b border-slate-800 shadow-md">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <button onclick="exitAdminView()" class="px-3.5 py-1.5 rounded-xl border border-slate-700 bg-slate-800 text-xs font-extrabold hover:bg-slate-700 cursor-pointer flex items-center gap-1.5">
+            ← Back to Storefront
+          </button>
+          <span class="text-slate-500 hidden sm:inline">|</span>
+          <span class="text-xs font-mono font-bold text-amber-400 uppercase tracking-wider hidden sm:inline">
+            Page 4: Isolated Owner Command Control HQ
+          </span>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <button onclick="saveAllChangesToStorage()" class="px-5 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-black uppercase tracking-wider shadow-md flex items-center gap-1.5 cursor-pointer active:scale-95 transition-all">
+            💾 Save All Changes
+          </button>
+        </div>
+      </div>
+
+      <div id="admin-save-toast" class="hidden px-6 py-2 bg-emerald-600 text-white text-xs font-bold flex items-center justify-between animate-in fade-in">
+        <span>✓ All changes, newly added dishes, prices, and settings saved into browser localStorage!</span>
+        <span class="font-urdu text-[11px]">تمام ڈیٹا مکمل محفوظ ہو گیا</span>
+      </div>
+    </header>
+
+    <!-- Admin Workspaces Container -->
+    <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 py-8 space-y-8">
+      
+      <!-- COMPONENT ENGINE: "ADD NEW DISH TO LIVE CATALOG" WIDGET -->
+      <section class="p-6 sm:p-8 rounded-3xl bg-white border border-slate-200 shadow-sm space-y-6">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-4">
+          <div>
+            <span class="text-xs font-black uppercase tracking-wider text-amber-600">Component Engine</span>
+            <h2 class="text-xl font-black text-slate-900">Add New Dish to Live Catalog / نیا پکوان شامل کریں</h2>
+            <p class="text-xs text-slate-500">Inject custom recipes directly into the continuous public menu stream.</p>
+          </div>
+          <span class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 text-xs font-bold self-start sm:self-auto">
+            ● Direct Stream Injection
+          </span>
+        </div>
+
+        <form id="add-dish-form" onsubmit="handleAddNewDish(event)" class="space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+            <div>
+              <label class="block font-bold mb-1">Dish Name (English) *</label>
+              <input type="text" id="new-dish-name-en" placeholder="e.g. Royal Dumba Karahi" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 font-bold" required>
+            </div>
+            <div>
+              <label class="block font-bold mb-1 font-urdu text-right" dir="rtl">پکوان کا نام (اردو) *</label>
+              <input type="text" id="new-dish-name-ur" placeholder="مثال: شاہی دنبہ کڑاہی" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-right font-urdu font-bold" required>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
+            <div>
+              <label class="block font-bold mb-1">Menu Category</label>
+              <select id="new-dish-cat" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 font-semibold">
+                <option value="sajji">Balochi Sajji</option>
+                <option value="combos">Family Combos</option>
+                <option value="karahi">Desi Karahi</option>
+                <option value="mutton">Mutton Roasts</option>
+                <option value="beef">Beef Specialties</option>
+                <option value="daal">Daal Makhni</option>
+                <option value="tandoor">Fresh Tandoor</option>
+                <option value="drinks">Beverages</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block font-bold mb-1">Continuous Stack</label>
+              <select id="new-dish-group" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 font-semibold">
+                <option value="priority">Group 1 Priority (Top of Stack)</option>
+                <option value="extended">Group 2 Extended (Traditional Stack)</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block font-bold mb-1">Portion Type</label>
+              <select id="new-dish-portions" onchange="toggleHalfPriceInput()" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 font-semibold">
+                <option value="dual">Full & Half Portions (ڈبل پورشن)</option>
+                <option value="single">Single Serving Only</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs p-4 rounded-2xl bg-slate-50 border border-slate-200">
+            <div>
+              <label class="block font-bold mb-1">Full Serving Price (Rs.) *</label>
+              <input type="number" id="new-dish-full-price" value="1550" class="w-full px-3.5 py-2 rounded-xl border border-slate-300 font-mono font-bold" required>
+            </div>
+            <div id="half-price-container">
+              <label class="block font-bold mb-1">Half Serving Price (Rs.)</label>
+              <input type="number" id="new-dish-half-price" value="850" class="w-full px-3.5 py-2 rounded-xl border border-slate-300 font-mono font-bold">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+            <div>
+              <label class="block font-bold mb-1">Description (English)</label>
+              <textarea id="new-dish-desc-en" rows="2" placeholder="Freshly roasted with desi spices..." class="w-full px-3.5 py-2 rounded-xl border border-slate-300"></textarea>
+            </div>
+            <div>
+              <label class="block font-bold mb-1 font-urdu text-right" dir="rtl">تفصیل (اردو)</label>
+              <textarea id="new-dish-desc-ur" rows="2" placeholder="روایتی مصالحوں اور خالص دیسی گھی میں تیار..." class="w-full px-3.5 py-2 rounded-xl border border-slate-300 text-right font-urdu"></textarea>
+            </div>
+          </div>
+
+          <!-- Drag and Drop Image File Upload -->
+          <div class="text-xs space-y-1">
+            <label class="block font-bold">Dish Image (Drag & Drop or Click to Attach)</label>
+            <div id="dish-drop-zone" class="p-4 rounded-2xl border-2 border-dashed border-slate-300 bg-slate-50 hover:border-amber-500 cursor-pointer flex items-center gap-4 transition-all">
+              <img id="new-dish-img-preview" src="/src/assets/images/dish_chicken_sajji_1790248406038.jpg" alt="Preview" class="w-16 h-16 rounded-xl object-cover shadow-sm bg-slate-200">
+              <div class="flex-1 text-left">
+                <span class="font-bold text-slate-800 block">Click to upload photo or drop file here</span>
+                <span class="text-[11px] text-slate-400 block">Auto-converts to optimized persistent Base64 Data-URI</span>
+              </div>
+              <input type="file" id="new-dish-file-input" accept="image/*" class="hidden">
+            </div>
+          </div>
+
+          <div class="flex justify-end pt-2">
+            <button type="submit" class="px-6 py-3 rounded-xl bg-amber-600 hover:bg-amber-700 text-white text-xs font-black uppercase tracking-wider flex items-center gap-1.5 cursor-pointer shadow-md">
+              ➕ Inject Dish into Live Catalog
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <!-- GRANULAR CRUD CONTROLLER FOR EVERY SINGLE MENU ITEM -->
+      <section class="p-6 sm:p-8 rounded-3xl bg-white border border-slate-200 shadow-sm space-y-6">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-4">
+          <div>
+            <span class="text-xs font-black uppercase tracking-wider text-amber-600">Granular State Controls</span>
+            <h2 class="text-xl font-black text-slate-900">Exhaustive Granular Controls for Every Single Dish</h2>
+            <p class="text-xs text-slate-500">Edit Name, Price (Capped strictly at Rs. 3,500), Descriptions, and Image for each dish independently.</p>
+          </div>
+          <span id="admin-catalog-count-badge" class="px-3 py-1 rounded-full bg-amber-50 text-amber-700 border border-amber-200 text-xs font-bold self-start sm:self-auto">
+            15+ Live Items
+          </span>
+        </div>
+
+        <div id="admin-dishes-grid" class="space-y-4">
+          <!-- Populated dynamically with full independent editing inputs for every dish -->
+        </div>
+      </section>
+
+      <!-- SECURITY TOKEN UPDATER (12345) -->
+      <section class="p-6 rounded-3xl bg-white border border-slate-200 shadow-sm space-y-4 max-w-xl">
+        <h3 class="text-base font-extrabold text-slate-900">Security Passcode Token (Default: 12345)</h3>
+        <p class="text-xs text-slate-500">Update the master token used to access this isolated administration workspace.</p>
+        <div class="flex gap-2 text-xs">
+          <input type="text" id="admin-token-input" value="12345" class="px-3.5 py-2.5 rounded-xl border border-slate-300 font-mono font-bold tracking-widest text-sm w-48">
+          <button onclick="saveAdminToken()" class="px-4 py-2.5 rounded-xl bg-slate-900 text-white font-bold cursor-pointer hover:bg-slate-800">
+            Update Passcode
+          </button>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Bottom Save Footer -->
+    <footer class="sticky bottom-0 z-40 w-full bg-white border-t border-slate-200 py-3 px-6 flex justify-between items-center shadow-lg">
+      <button onclick="exitAdminView()" class="text-xs font-bold text-slate-500 hover:text-amber-600">
+        ← Return to Storefront
+      </button>
+      <button onclick="saveAllChangesToStorage()" class="px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-black uppercase shadow-md cursor-pointer">
+        💾 Save All Changes (Sync localStorage)
+      </button>
+    </footer>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- MODAL 1: 3-DOT KEBAB GUIDELINES & PASSCODE CHALLENGE -->
+  <!-- ========================================================================= -->
+  <div id="auth-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
+    <div class="w-full max-w-md bg-white rounded-3xl p-6 border border-slate-200 shadow-2xl space-y-5">
+      <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+        <div class="flex items-center gap-2">
+          <span class="w-8 h-8 rounded-xl bg-amber-500 text-slate-950 flex items-center justify-center font-black">🔒</span>
+          <div>
+            <h3 class="text-sm font-bold text-slate-900">Owner Gateway Authentication</h3>
+            <span class="text-[11px] font-urdu text-amber-600">ایڈمن لاگ ان و پاس کوڈ</span>
+          </div>
+        </div>
+        <button onclick="closeSecurityGateway()" class="text-slate-400 hover:text-slate-700 text-lg cursor-pointer">✕</button>
+      </div>
+
+      <p class="text-xs text-slate-500 leading-relaxed">
+        This area is restricted to Muhammad Dogar & Restaurant Management. Enter the master security verification token to access the isolated control panel.
+      </p>
+
+      <form onsubmit="handleAuthSubmit(event)" class="space-y-3">
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">Enter Master Passcode Token (Default: 12345)</label>
+          <input type="password" id="auth-passcode-input" placeholder="12345" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 font-mono font-bold tracking-widest text-center focus:outline-none focus:border-amber-500" required>
+        </div>
+        <div id="auth-error-msg" class="hidden text-xs text-rose-600 font-bold">
+          Invalid passcode token. Please check and try again.
+        </div>
+        <button type="submit" class="w-full py-2.5 rounded-xl bg-amber-600 hover:bg-amber-700 text-white text-xs font-bold uppercase tracking-wider cursor-pointer shadow-md">
+          Authenticate & Open Owner Panel →
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- MODAL 2: UPSELL DRAWER MODAL WITH COLD DRINKS & WHATSAPP CHECKOUT -->
+  <!-- ========================================================================= -->
+  <div id="upsell-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
+    <div class="w-full max-w-lg bg-white rounded-3xl p-6 border border-slate-200 shadow-2xl space-y-5 max-h-[90vh] overflow-y-auto">
+      <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+        <div class="flex items-center gap-3">
+          <img id="upsell-dish-img" src="" alt="Dish" class="w-12 h-12 rounded-xl object-cover shadow-sm bg-slate-100">
+          <div>
+            <h3 id="upsell-dish-title-en" class="text-sm font-extrabold text-slate-900">Dish Name</h3>
+            <span id="upsell-dish-title-ur" class="text-xs font-urdu text-amber-600 block">نام</span>
+          </div>
+        </div>
+        <button onclick="closeUpsellModal()" class="text-slate-400 hover:text-slate-700 text-lg cursor-pointer">✕</button>
+      </div>
+
+      <!-- Portion Selector in Upsell -->
+      <div id="upsell-portion-toggle-box" class="p-3 rounded-2xl bg-slate-50 border border-slate-200 flex items-center justify-between">
+        <span class="text-xs font-bold text-slate-700">Select Serving Portion:</span>
+        <div class="flex gap-1.5 text-xs font-bold">
+          <button id="modal-portion-full-btn" onclick="selectModalPortion('full')" class="px-3 py-1 rounded-xl bg-amber-600 text-white">Full</button>
+          <button id="modal-portion-half-btn" onclick="selectModalPortion('half')" class="px-3 py-1 rounded-xl bg-slate-200 text-slate-700">Half</button>
+        </div>
+      </div>
+
+      <!-- Cold Drink Checkboxes -->
+      <div class="space-y-2">
+        <span class="text-xs font-bold text-slate-700 block">Add-On Refreshing Cold Drinks (کولڈ ڈرنکس):</span>
+        <div class="space-y-1.5 text-xs">
+          <label class="flex items-center justify-between p-2.5 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer">
+            <div class="flex items-center gap-2">
+              <input type="checkbox" id="drink-pepsi" value="Pepsi 500ml" data-price="120" class="rounded text-amber-600">
+              <span class="font-semibold">Pepsi 500ml Chilled</span>
+            </div>
+            <span class="font-mono font-bold">+Rs. 120</span>
+          </label>
+          <label class="flex items-center justify-between p-2.5 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer">
+            <div class="flex items-center gap-2">
+              <input type="checkbox" id="drink-7up" value="7Up 500ml" data-price="120" class="rounded text-amber-600">
+              <span class="font-semibold">7Up 500ml Chilled</span>
+            </div>
+            <span class="font-mono font-bold">+Rs. 120</span>
+          </label>
+          <label class="flex items-center justify-between p-2.5 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer">
+            <div class="flex items-center gap-2">
+              <input type="checkbox" id="drink-raita" value="Special Mint Raita" data-price="80" class="rounded text-amber-600">
+              <span class="font-semibold">Extra Special Mint Raita & Fresh Salad</span>
+            </div>
+            <span class="font-mono font-bold">+Rs. 80</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Delivery radius check -->
+      <div class="p-3 rounded-xl bg-emerald-50 border border-emerald-200 text-xs text-emerald-800 font-medium flex items-center justify-between">
+        <span>📍 Free Delivery within 5 KM Zone (0 Rs Delivery Fee)</span>
+        <span class="font-bold">✓ Applied</span>
+      </div>
+
+      <!-- Actions -->
+      <div class="flex items-center gap-3 pt-2">
+        <button onclick="addModalItemToCart()" class="flex-1 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold cursor-pointer">
+          Add to Cart Tray
+        </button>
+        <button onclick="checkoutDirectToWhatsApp()" class="flex-1 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-black uppercase flex items-center justify-center gap-1.5 cursor-pointer shadow-md">
+          <span>Direct WhatsApp Order 💬</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- SLIDE-OVER CART TRAY DRAWER -->
+  <!-- ========================================================================= -->
+  <div id="cart-drawer-overlay" class="fixed inset-0 z-50 hidden bg-black/60 backdrop-blur-xs" onclick="toggleCartDrawer(false)"></div>
+  <div id="cart-drawer" class="fixed top-0 right-0 z-50 h-full w-full max-w-md bg-white shadow-2xl flex flex-col transform translate-x-full transition-transform duration-300 ease-in-out border-l border-slate-200">
+    <div class="p-4 border-b border-slate-200 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="text-base font-black">Your Order Cart</span>
+        <span id="cart-badge-total" class="px-2 py-0.5 rounded-full bg-amber-100 text-amber-800 text-xs font-bold">0 Items</span>
+      </div>
+      <button onclick="toggleCartDrawer(false)" class="text-slate-400 hover:text-slate-700 text-lg cursor-pointer">✕</button>
+    </div>
+
+    <div id="cart-items-container" class="flex-1 overflow-y-auto p-4 space-y-3">
+      <!-- Populated via JS -->
+    </div>
+
+    <div class="p-4 border-t border-slate-200 space-y-3 bg-slate-50">
+      <div class="flex justify-between items-center text-sm font-bold">
+        <span>Net Total:</span>
+        <span id="cart-total-price" class="text-lg font-mono text-amber-600">Rs. 0</span>
+      </div>
+      <button onclick="checkoutCartToWhatsApp()" class="w-full py-3 rounded-2xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-black uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg cursor-pointer">
+        Checkout via WhatsApp (0300-9346628) 🚀
+      </button>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- VANILLA JAVASCRIPT MASTER APPLICATION CONTROLLER -->
+  <!-- ========================================================================= -->
+  <script>
+    // 1. Initial State Data Schema
+    const STORAGE_KEY = 'dogar_sajji_master_config_v4';
+    const CART_KEY = 'dogar_sajji_customer_cart_v1';
+
+    const DEFAULT_DATA = {
+      version: 4,
+      adminPasswordToken: '12345',
+      restaurantNameEn: 'Dogar Sajji & Restaurant',
+      restaurantNameUr: 'ڈوگر سجی اینڈ ریسٹورنٹ',
+      taglineEn: 'Wood-Roasted Charcoal Sajji & Pure Shinwari Heritage',
+      taglineUr: 'خالص دیسی گھی کڑاہی، تازہ دمپخت سجی اور روایتی تندوری نان روزانہ دسترخوان پر حاضر',
+      hotlineFormatted: '0300-9346628',
+      hotlineWhatsappRaw: '923009346628',
+      ownerNameEn: 'Muhammad Dogar',
+      ownerNameUr: 'محمد ڈوگر',
+      ownerTitleEn: 'Founder, Owner & Master Pitmaster',
+      ownerTitleUr: 'بانی و سرپرست اعلیٰ',
+      ownerQuoteEn: 'Serving authentic Balochi wood-roasted Sajji and pure traditions with an uncompromising commitment to 100% daily fresh halal zabihah meat and hand-ground desi spices.',
+      ownerQuoteUr: 'ہماری اولین ترجیح خالص دیسی مسالوں اور روزانہ تازہ ذبیحہ کے ساتھ اصل بلوچی سجی کا روایتی ذائقہ آپ کے دسترخوان تک پہنچانا ہے۔',
+      ownerPortrait: '/src/assets/images/owner_muhammad_dogar_1790250637041.jpg',
+      menuItems: [
+        // =========================================================================
+        // GROUP 1: PRIORITY ITEMS (Top of Continuous Stack)
+        // Sajji, Traditional Chargha, Deals, Cold Drinks Packaging Grid
+        // =========================================================================
+        {
+          id: 'sajji-chicken-premium',
+          nameEn: 'Premium Chicken Sajji',
+          nameUr: 'فل چکن سجّی',
+          categoryId: 'sajji',
+          menuGroup: 'priority',
+          descriptionEn: 'Traditional Balochi wood-roasted whole chicken sajji marinated with authentic mountain rock salts.',
+          descriptionUr: 'روایتی بلوچی لکڑی کے کوئلوں پر تیار شدہ چکن سجی مع خاص مصالحہ جات۔',
+          image: '/src/assets/images/dish_chicken_sajji_1790248406038.jpg',
+          hasPortions: true,
+          prices: { full: 1980, half: 1050 },
+          selectedPortion: 'full'
+        },
+        {
+          id: 'sajji-traditional-chargha',
+          nameEn: 'Traditional Chargha',
+          nameUr: 'فل چکن چرخہ',
+          categoryId: 'sajji',
+          menuGroup: 'priority',
+          descriptionEn: 'Golden spiced whole chicken chargha seasoned with hand-ground desi spices and fresh lemon.',
+          descriptionUr: 'خالص دیسی مسالوں اور لیموں میں میرینیٹ شدہ روایتی چکن چرخہ۔',
+          image: '/src/assets/images/dish_chicken_sajji_1790248406038.jpg',
+          hasPortions: true,
+          prices: { full: 1850, half: 950 },
+          selectedPortion: 'full'
+        },
+        {
+          id: 'deal-01-special',
+          nameEn: 'Special Deal 01',
+          nameUr: 'ڈیل 01',
+          categoryId: 'combos',
+          menuGroup: 'priority',
+          descriptionEn: 'Special combo deal with freshly roasted chicken serving, hot tandoor naan, raita, and cold beverage.',
+          descriptionUr: 'خصوصی ڈیل: تازہ سجی مع روغنی نان، رائتہ اور کولڈ ڈرنک۔',
+          image: '/src/assets/images/dish_combo_feast_1790249210676.jpg',
+          hasPortions: false,
+          prices: { full: 1280 },
+          selectedPortion: 'full'
+        },
+        {
+          id: 'deal-02-mega-family',
+          nameEn: 'Mega Family Deal 02',
+          nameUr: 'ڈیل 02',
+          categoryId: 'combos',
+          menuGroup: 'priority',
+          descriptionEn: 'Mega family feast deal with whole chicken roast, fresh tandoor breads, raita, salad, and cold drinks.',
+          descriptionUr: 'میگا فیملی ڈیل: مکمل چکن روسٹ، روغنی نان، کولڈ ڈرنکس اور خصوصی رائتہ سلاد۔',
+          image: '/src/assets/images/dish_combo_feast_1790249210676.jpg',
+          hasPortions: false,
+          prices: { full: 1980 },
+          selectedPortion: 'full'
+        },
+        {
+          id: 'drink-regular-can',
+          nameEn: 'Regular Can',
+          nameUr: 'کین کولڈ ڈرنک',
+          categoryId: 'drinks',
+          menuGroup: 'priority',
+          descriptionEn: 'Chilled 250ml canned soda (Coke / Sprite / Fanta).',
+          descriptionUr: 'ٹھنڈا ریگولر 250 ملی کین (کوکا کولا، سپرائٹ، فانٹا)۔',
+          image: '/src/assets/images/dish_beverages_ice_1790248491563.jpg',
+          hasPortions: false,
+          prices: { full: 70 },
+          selectedPortion: 'full'
+        },
+        {
+          id: 'drink-half-litre',
+          nameEn: 'Half Litre',
+          nameUr: 'آدھا لیٹر بوتل',
+          categoryId: 'drinks',
+          menuGroup: 'priority',
+          descriptionEn: 'Chilled 500ml beverage bottle.',
+          descriptionUr: 'ٹھنڈی 500 ملی لیٹر بوتل۔',
+          image: '/src/assets/images/dish_beverages_ice_1790248491563.jpg',
+          hasPortions: false,
+          prices: { full: 120 },
+          selectedPortion: 'full'
+        },
+        {
+          id: 'drink-15-litre',
+          nameEn: '1.5 Litre',
+          nameUr: 'ڈیڑھ لیٹر بوتل',
+          categoryId: 'drinks',
+          menuGroup: 'priority',
+          descriptionEn: '1.5 Litre family size cold beverage bottle.',
+          descriptionUr: 'ڈیڑھ لیٹر فیملی سائز بوتل۔',
+          image: '/src/assets/images/dish_beverages_ice_1790248491563.jpg',
+          hasPortions: false,
+          prices: { full: 220 },
+          selectedPortion: 'full'
+        },
+        {
+          id: 'drink-mineral-water',
+          nameEn: 'Mineral Water',
+          nameUr: 'منرل واٹر',
+          categoryId: 'drinks',
+          menuGroup: 'priority',
+          descriptionEn: 'Pure chilled bottled mineral water.',
+          descriptionUr: 'صاف اور شفاف ٹھنڈا منرل واٹر۔',
+          image: '/src/assets/images/dish_beverages_ice_1790248491563.jpg',
+          hasPortions: false,
+          prices: { full: 100 },
+          selectedPortion: 'full'
+        },
+
+        // =========================================================================
+        // GROUP 2: EXTENDED CATALOG (Page 2 Traditional Menu Continuous Stream)
+        // Karahi, Mutton, Handi, Beef, Daal, Tandoor (Max boundary price cap Rs. 3500)
+        // =========================================================================
+        {
+          id: 'karahi-desi-murgh',
+          nameEn: 'Desi Murgh Karahi',
+          nameUr: 'دیسی مرغ کڑاہی',
+          categoryId: 'karahi',
+          menuGroup: 'extended',
+          descriptionEn: 'Fresh authentic desi chicken wok prepared in pure desi ghee with vine tomatoes and green chillies.',
+          descriptionUr: 'اصلی دیسی مرغ کڑاہی خالص دیسی گھی، ٹماٹر اور ہری مرچوں میں تیار شدہ۔',
+          image: '/src/assets/images/dish_karahi_special_1790248428097.jpg',
+          hasPortions: true,
+          prices: { full: 3400, half: 1750 },
+          selectedPortion: 'full'
+        },
+        {
+          id: 'karahi-mutton-premium',
+          nameEn: 'Mutton Karahi Premium',
+          nameUr: 'مٹن کڑاہی خاص',
+          categoryId: 'mutton',
+          menuGroup: 'extended',
+          descriptionEn: 'Fresh daily halal mutton cooked in cast iron wok with fresh ground spices, ginger, and green chillies.',
+          descriptionUr: 'روزانہ تازہ ذبیحہ مٹن کڑاہی، ادرک اور تازہ مصالحوں کے ساتھ لوہے کی کڑاہی میں تیار۔',
+          image: '/src/assets/images/dish_mutton_sajji_1790248417867.jpg',
+          hasPortions: true,
+          prices: { full: 3500, half: 1900 },
+          selectedPortion: 'full'
+        },
+        {
+          id: 'karahi-chicken-handi-boneless',
+          nameEn: 'Chicken Handi Boneless',
+          nameUr: 'چکن ہانڈی بون لیس',
+          categoryId: 'karahi',
+          menuGroup: 'extended',
+          descriptionEn: 'Tender boneless chicken cubes simmered in clay handi with rich cream and pure country butter.',
+          descriptionUr: 'مٹی کی ہانڈی میں مکھن اور بالائی کے ساتھ پکی ہوئی نرم بون لیس چکن ہانڈی۔',
+          image: '/src/assets/images/dish_karahi_special_1790248428097.jpg',
+          hasPortions: true,
+          prices: { full: 2200, half: 1150 },
+          selectedPortion: 'full'
+        },
+        {
+          id: 'beef-kabab-plate',
+          nameEn: 'Beef Kabab Plate',
+          nameUr: 'بیف کباب پلیٹ',
+          categoryId: 'beef',
+          menuGroup: 'extended',
+          descriptionEn: 'Grilled beef seekh kababs seasoned with traditional spices, served with fresh mint raita and onion rings.',
+          descriptionUr: 'تازہ کوئلوں پر پکے ہوئے بیف کباب مع پودینہ رائتہ و پیاز سلاد۔',
+          image: '/src/assets/images/dish_beef_bihari_1790249187284.jpg',
+          hasPortions: false,
+          prices: { full: 1250 },
+          selectedPortion: 'full'
+        },
+        {
+          id: 'daal-fry-makhni',
+          nameEn: 'Daal Fry Makhni',
+          nameUr: 'دال فرائی مکھنی',
+          categoryId: 'daal',
+          menuGroup: 'extended',
+          descriptionEn: 'Slow-simmered lentils tempered in pure country butter and whole roasted cumin seeds.',
+          descriptionUr: 'دیسی مکھن اور زیرہ کے کڑکے سے تیار شدہ دال فرائی مکھنی۔',
+          image: '/src/assets/images/dish_daal_makhni_1790249173685.jpg',
+          hasPortions: false,
+          prices: { full: 320 },
+          selectedPortion: 'full'
+        },
+        {
+          id: 'tandoor-roghni-naan',
+          nameEn: 'Roghni Naan',
+          nameUr: 'روغنی نان',
+          categoryId: 'tandoor',
+          menuGroup: 'extended',
+          descriptionEn: 'Clay-oven baked leavened bread brushed with warm desi ghee and toasted sesame seeds.',
+          descriptionUr: 'دیسی گھی اور تلوں سے مزین تازہ تندوری روغنی نان۔',
+          image: '/src/assets/images/dish_tandoor_naan_1790249200256.jpg',
+          hasPortions: false,
+          prices: { full: 70 },
+          selectedPortion: 'full'
+        },
+        {
+          id: 'tandoor-roti',
+          nameEn: 'Tandoori Roti',
+          nameUr: 'تندوری روٹی',
+          categoryId: 'tandoor',
+          menuGroup: 'extended',
+          descriptionEn: 'Fresh hot 100% whole wheat roti baked against red-hot clay tandoor walls.',
+          descriptionUr: 'تازہ گرم روایتی تندوری گندم کی روٹی۔',
+          image: '/src/assets/images/dish_tandoor_naan_1790249200256.jpg',
+          hasPortions: false,
+          prices: { full: 25 },
+          selectedPortion: 'full'
+        }
+      ],
+      landmarks: [
+        { id: 'kasur-road', nameEn: 'Main Sarak / Kasur Road', nameUr: 'مین سڑک / قصور روڈ', desc: 'Direct Frontage / مین پر' },
+        { id: 'mehar-kafeel', nameEn: 'Mehar Kafeel Auto', nameUr: 'مہر کفیل آٹو', desc: 'Adjacent / متصل' },
+        { id: 'sindh-bank', nameEn: 'Sindh Bank', nameUr: 'سندھ بینک', desc: '40m Distance / 40 میٹر' },
+        { id: 'govt-school', nameEn: 'Govt Faiz e Aam School', nameUr: 'گورنمنٹ فیض عام اسکول', desc: 'Opposite / سامنے' },
+        { id: 'ayat-academy', nameEn: 'Ayat-ul-Quran Academy', nameUr: 'آیت القرآن اکیڈمی', desc: '80m East / 80 میٹر' },
+        { id: 'krown-dollar', nameEn: 'Krown Dollar Store', nameUr: 'کراؤن ڈالر اسٹور', desc: '120m / 120 میٹر' },
+        { id: 'faiz-road', nameEn: 'Faiz E Aam Road', nameUr: 'فیض عام روڈ', desc: 'At Intersection / چوک پر' },
+        { id: 'green-pharmacy', nameEn: 'Green Plus Pharmacy', nameUr: 'گرین پلس فارمیسی', desc: '150m West / 150 میٹر' },
+        { id: 'hamid-garments', nameEn: 'Hamid Garments', nameUr: 'حامد گارمنٹس', desc: '200m / 200 میٹر' }
+      ]
+    };
+
+    // 2. Storage Handler
+    let appState = (() => {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (raw) {
+          const parsed = JSON.parse(raw);
+          if (parsed && parsed.version === 4 && Array.isArray(parsed.menuItems)) {
+            const valid = parsed.menuItems.filter(i => (i.prices?.full || 0) <= 3500);
+            return { ...DEFAULT_DATA, ...parsed, menuItems: valid.length ? valid : DEFAULT_DATA.menuItems };
+          }
+        }
+      } catch (e) { console.warn('Storage read fallback', e); }
+      return DEFAULT_DATA;
+    })();
+
+    let cartState = (() => {
+      try {
+        const raw = localStorage.getItem(CART_KEY);
+        if (raw) return JSON.parse(raw);
+      } catch (e) {}
+      return [];
+    })();
+
+    function saveAllChangesToStorage() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(appState));
+        const toast = document.getElementById('admin-save-toast');
+        toast.classList.remove('hidden');
+        setTimeout(() => toast.classList.add('hidden'), 3500);
+      } catch (e) {
+        alert('Storage quota exceeded or error occurred while saving.');
+      }
+    }
+
+    function saveCartToStorage() {
+      localStorage.setItem(CART_KEY, JSON.stringify(cartState));
+      renderCartUI();
+    }
+
+    // 3. Catalog Renderers
+    function renderCatalog() {
+      const g1Grid = document.getElementById('group1-catalog-grid');
+      const g2Grid = document.getElementById('group2-catalog-grid');
+      g1Grid.innerHTML = '';
+      g2Grid.innerHTML = '';
+
+      appState.menuItems.forEach(item => {
+        const currentPortion = item.selectedPortion || 'full';
+        const price = item.hasPortions && currentPortion === 'half' ? (item.prices.half || item.prices.full) : item.prices.full;
+
+        const card = document.createElement('div');
+        card.className = 'rounded-3xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition-all flex flex-col justify-between gap-4 cursor-pointer group';
+        card.onclick = (e) => {
+          if (!e.target.closest('button')) {
+            openUpsellModal(item.id);
+          }
+        };
+
+        let portionPillHtml = '';
+        if (item.hasPortions) {
+          portionPillHtml = `
+            <div class="flex items-center gap-1 p-1 rounded-xl bg-slate-100 border border-slate-200" onclick="event.stopPropagation()">
+              <button onclick="switchDishPortion('${item.id}', 'full')" class="px-2.5 py-1 rounded-lg text-xs font-bold transition-colors ${currentPortion === 'full' ? 'bg-amber-600 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900'}">Full</button>
+              <button onclick="switchDishPortion('${item.id}', 'half')" class="px-2.5 py-1 rounded-lg text-xs font-bold transition-colors ${currentPortion === 'half' ? 'bg-amber-600 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900'}">Half</button>
+            </div>
+          `;
+        }
+
+        card.innerHTML = `
+          <div class="space-y-3">
+            <div class="w-full aspect-16/9 rounded-2xl overflow-hidden bg-slate-100 relative">
+              <img src="${item.image}" alt="${item.nameEn}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            </div>
+            <div>
+              <h4 class="text-sm font-extrabold text-slate-900 group-hover:text-amber-600 transition-colors">${item.nameEn}</h4>
+              <span class="text-xs font-urdu font-bold text-amber-600 block mt-0.5" dir="rtl">${item.nameUr}</span>
+              <p class="text-[11px] text-slate-500 mt-1 line-clamp-2">${item.descriptionEn}</p>
+            </div>
+          </div>
+
+          <div class="pt-2 border-t border-slate-100 flex items-center justify-between gap-2">
+            <div>
+              <span class="text-[10px] text-slate-400 font-bold uppercase block">${item.hasPortions ? currentPortion.toUpperCase() : 'SINGLE'} SERVING</span>
+              <span class="text-base font-mono font-black text-slate-900">Rs. ${price}</span>
+            </div>
+            <div class="flex items-center gap-2">
+              ${portionPillHtml}
+              <button onclick="directAddToCart('${item.id}'); event.stopPropagation();" class="p-2 rounded-xl bg-amber-600 hover:bg-amber-700 text-white text-xs font-bold shadow-xs cursor-pointer">
+                🛒 Add
+              </button>
+            </div>
+          </div>
+        `;
+
+        if (item.menuGroup === 'priority') {
+          g1Grid.appendChild(card);
+        } else {
+          g2Grid.appendChild(card);
+        }
+      });
+    }
+
+    function switchDishPortion(dishId, portion) {
+      const dish = appState.menuItems.find(m => m.id === dishId);
+      if (dish) {
+        dish.selectedPortion = portion;
+        renderCatalog();
+      }
+    }
+
+    function renderLandmarks() {
+      const container = document.getElementById('landmarks-grid');
+      container.innerHTML = '';
+      appState.landmarks.forEach(pin => {
+        const item = document.createElement('div');
+        item.className = 'p-3 rounded-2xl bg-white border border-slate-200 flex items-center justify-between gap-2 hover:border-amber-500 cursor-pointer shadow-2xs';
+        item.onclick = () => {
+          navigator.clipboard.writeText(`${pin.nameEn} (${pin.nameUr}), Kasur Road, Lahore`);
+          alert(`Copied landmark location: ${pin.nameEn}`);
+        };
+        item.innerHTML = `
+          <div class="truncate">
+            <span class="text-xs font-bold text-slate-800 block truncate">📍 ${pin.nameEn}</span>
+            <span class="text-[11px] font-urdu text-amber-600 block" dir="rtl">${pin.nameUr}</span>
+          </div>
+          <span class="text-[10px] font-mono font-bold px-2 py-0.5 rounded-md bg-slate-100 text-slate-500 shrink-0">${pin.desc}</span>
+        `;
+        container.appendChild(item);
+      });
+    }
+
+    // 4. Cart Operations
+    function directAddToCart(dishId) {
+      const dish = appState.menuItems.find(m => m.id === dishId);
+      if (!dish) return;
+      const portion = dish.selectedPortion || 'full';
+      const price = dish.hasPortions && portion === 'half' ? (dish.prices.half || dish.prices.full) : dish.prices.full;
+
+      const existing = cartState.find(c => c.dishId === dishId && c.portion === portion);
+      if (existing) {
+        existing.quantity += 1;
+      } else {
+        cartState.push({
+          dishId: dish.id,
+          nameEn: dish.nameEn,
+          portion: portion,
+          price: price,
+          quantity: 1,
+          drinks: []
+        });
+      }
+      saveCartToStorage();
+      toggleCartDrawer(true);
+    }
+
+    function renderCartUI() {
+      const badge = document.getElementById('cart-counter-badge');
+      const badgeTotal = document.getElementById('cart-badge-total');
+      const container = document.getElementById('cart-items-container');
+      const totalEl = document.getElementById('cart-total-price');
+
+      const totalItems = cartState.reduce((sum, item) => sum + item.quantity, 0);
+      badge.textContent = totalItems;
+      badgeTotal.textContent = `${totalItems} Items`;
+
+      container.innerHTML = '';
+      let netSum = 0;
+
+      if (cartState.length === 0) {
+        container.innerHTML = '<div class="text-center py-10 text-xs text-slate-400">Your cart tray is empty.<br>Tap any dish to order!</div>';
+        totalEl.textContent = 'Rs. 0';
+        return;
+      }
+
+      cartState.forEach((item, index) => {
+        let itemTotal = item.price * item.quantity;
+        if (item.drinks) {
+          item.drinks.forEach(d => { itemTotal += d.price * item.quantity; });
+        }
+        netSum += itemTotal;
+
+        const row = document.createElement('div');
+        row.className = 'p-3 rounded-2xl bg-slate-50 border border-slate-200 flex items-center justify-between text-xs gap-3';
+        row.innerHTML = `
+          <div class="truncate">
+            <span class="font-bold text-slate-900 block truncate">${item.nameEn} (${item.portion})</span>
+            ${item.drinks && item.drinks.length ? `<span class="text-[10px] text-slate-500 block">+ ${item.drinks.map(d => d.name).join(', ')}</span>` : ''}
+            <span class="font-mono font-bold text-amber-600">Rs. ${itemTotal}</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <button onclick="changeCartQty(${index}, -1)" class="w-6 h-6 rounded-md bg-slate-200 font-black">-</button>
+            <span class="font-mono font-bold">${item.quantity}</span>
+            <button onclick="changeCartQty(${index}, 1)" class="w-6 h-6 rounded-md bg-slate-200 font-black">+</button>
+          </div>
+        `;
+        container.appendChild(row);
+      });
+
+      totalEl.textContent = `Rs. ${netSum}`;
+    }
+
+    function changeCartQty(index, delta) {
+      if (!cartState[index]) return;
+      cartState[index].quantity += delta;
+      if (cartState[index].quantity <= 0) {
+        cartState.splice(index, 1);
+      }
+      saveCartToStorage();
+    }
+
+    function toggleCartDrawer(open) {
+      const drawer = document.getElementById('cart-drawer');
+      const overlay = document.getElementById('cart-drawer-overlay');
+      if (open) {
+        drawer.classList.remove('translate-x-full');
+        overlay.classList.remove('hidden');
+      } else {
+        drawer.classList.add('translate-x-full');
+        overlay.classList.add('hidden');
+      }
+    }
+
+    // 5. WhatsApp Checkout Pipeline (0300-9346628)
+    function checkoutCartToWhatsApp() {
+      if (cartState.length === 0) {
+        alert('Please add items to your cart before checking out.');
+        return;
+      }
+      let text = `*--- DOGAR SAJJI & RESTAURANT ORDER ---*\n`;
+      text += `*Hotline:* 0300-9346628\n`;
+      text += `*Location Zone:* Within 5 KM Free Delivery Zone\n\n`;
+      text += `*ORDER ITEMS:*\n`;
+
+      let total = 0;
+      cartState.forEach((item, idx) => {
+        let sub = item.price * item.quantity;
+        let extras = '';
+        if (item.drinks && item.drinks.length) {
+          extras = ` (Add-ons: ${item.drinks.map(d => d.name).join(', ')})`;
+          item.drinks.forEach(d => { sub += d.price * item.quantity; });
+        }
+        total += sub;
+        text += `${idx + 1}. ${item.nameEn} [${item.portion.toUpperCase()}] x ${item.quantity} = Rs. ${sub}${extras}\n`;
+      });
+
+      text += `\n*NET TOTAL BILL:* Rs. ${total}\n`;
+      text += `*Delivery Fee:* FREE (Within 5KM Radius)\n`;
+      text += `------------------------------------\n`;
+      text += `Please confirm my order and send estimated dispatch time. Thank you!`;
+
+      const url = `https://wa.me/923009346628?text=${encodeURIComponent(text)}`;
+      window.open(url, '_blank');
+    }
+
+    // 6. Upsell Modal
+    let activeModalDish = null;
+    let modalPortion = 'full';
+
+    function openUpsellModal(dishId) {
+      activeModalDish = appState.menuItems.find(m => m.id === dishId);
+      if (!activeModalDish) return;
+
+      modalPortion = activeModalDish.selectedPortion || 'full';
+      document.getElementById('upsell-dish-img').src = activeModalDish.image;
+      document.getElementById('upsell-dish-title-en').textContent = activeModalDish.nameEn;
+      document.getElementById('upsell-dish-title-ur').textContent = activeModalDish.nameUr;
+
+      const toggleBox = document.getElementById('upsell-portion-toggle-box');
+      if (activeModalDish.hasPortions) {
+        toggleBox.classList.remove('hidden');
+        selectModalPortion(modalPortion);
+      } else {
+        toggleBox.classList.add('hidden');
+      }
+
+      document.getElementById('drink-pepsi').checked = false;
+      document.getElementById('drink-7up').checked = false;
+      document.getElementById('drink-raita').checked = false;
+
+      document.getElementById('upsell-modal').classList.remove('hidden');
+      document.getElementById('upsell-modal').classList.add('flex');
+    }
+
+    function closeUpsellModal() {
+      document.getElementById('upsell-modal').classList.add('hidden');
+      document.getElementById('upsell-modal').classList.remove('flex');
+    }
+
+    function selectModalPortion(p) {
+      modalPortion = p;
+      const fullBtn = document.getElementById('modal-portion-full-btn');
+      const halfBtn = document.getElementById('modal-portion-half-btn');
+      if (p === 'full') {
+        fullBtn.className = 'px-3 py-1 rounded-xl bg-amber-600 text-white font-bold';
+        halfBtn.className = 'px-3 py-1 rounded-xl bg-slate-200 text-slate-700 font-bold';
+      } else {
+        halfBtn.className = 'px-3 py-1 rounded-xl bg-amber-600 text-white font-bold';
+        fullBtn.className = 'px-3 py-1 rounded-xl bg-slate-200 text-slate-700 font-bold';
+      }
+    }
+
+    function getSelectedDrinks() {
+      const drinks = [];
+      ['drink-pepsi', 'drink-7up', 'drink-raita'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el && el.checked) {
+          drinks.push({ name: el.value, price: Number(el.dataset.price) });
+        }
+      });
+      return drinks;
+    }
+
+    function addModalItemToCart() {
+      if (!activeModalDish) return;
+      const price = activeModalDish.hasPortions && modalPortion === 'half' ? (activeModalDish.prices.half || activeModalDish.prices.full) : activeModalDish.prices.full;
+      const drinks = getSelectedDrinks();
+
+      cartState.push({
+        dishId: activeModalDish.id,
+        nameEn: activeModalDish.nameEn,
+        portion: modalPortion,
+        price: price,
+        quantity: 1,
+        drinks: drinks
+      });
+
+      saveCartToStorage();
+      closeUpsellModal();
+      toggleCartDrawer(true);
+    }
+
+    function checkoutDirectToWhatsApp() {
+      if (!activeModalDish) return;
+      const price = activeModalDish.hasPortions && modalPortion === 'half' ? (activeModalDish.prices.half || activeModalDish.prices.full) : activeModalDish.prices.full;
+      const drinks = getSelectedDrinks();
+      let total = price;
+      drinks.forEach(d => { total += d.price; });
+
+      let text = `*--- DOGAR SAJJI DIRECT DISH ORDER ---*\n`;
+      text += `*Hotline:* 0300-9346628\n`;
+      text += `*Dish:* ${activeModalDish.nameEn} [${modalPortion.toUpperCase()}]\n`;
+      if (drinks.length) {
+        text += `*Add-ons:* ${drinks.map(d => `${d.name} (Rs. ${d.price})`).join(', ')}\n`;
+      }
+      text += `*Total Bill:* Rs. ${total}\n`;
+      text += `*Delivery Radius:* Within 5 KM Free Delivery Zone\n`;
+      text += `Please prepare and dispatch. Thank you!`;
+
+      const url = `https://wa.me/923009346628?text=${encodeURIComponent(text)}`;
+      window.open(url, '_blank');
+      closeUpsellModal();
+    }
+
+    // 7. Security Gateway (3-Dot Kebab Menu)
+    function openSecurityGateway() {
+      document.getElementById('auth-modal').classList.remove('hidden');
+      document.getElementById('auth-modal').classList.add('flex');
+      document.getElementById('auth-passcode-input').value = '';
+      document.getElementById('auth-error-msg').classList.add('hidden');
+    }
+
+    function closeSecurityGateway() {
+      document.getElementById('auth-modal').classList.add('hidden');
+      document.getElementById('auth-modal').classList.remove('flex');
+    }
+
+    function handleAuthSubmit(e) {
+      e.preventDefault();
+      const entered = document.getElementById('auth-passcode-input').value.trim();
+      const expected = appState.adminPasswordToken || '12345';
+
+      if (entered === expected) {
+        closeSecurityGateway();
+        enterAdminView();
+      } else {
+        document.getElementById('auth-error-msg').classList.remove('hidden');
+      }
+    }
+
+    function enterAdminView() {
+      document.getElementById('storefront-view').classList.add('hidden');
+      document.getElementById('admin-standalone-view').classList.remove('hidden');
+      document.getElementById('admin-standalone-view').classList.add('flex');
+      document.getElementById('admin-token-input').value = appState.adminPasswordToken || '12345';
+      renderAdminDishesGrid();
+      window.scrollTo(0, 0);
+    }
+
+    function renderAdminDishesGrid() {
+      const container = document.getElementById('admin-dishes-grid');
+      const badge = document.getElementById('admin-catalog-count-badge');
+      if (!container) return;
+      if (badge) badge.textContent = `${appState.menuItems.length} Live Items`;
+      container.innerHTML = '';
+
+      appState.menuItems.forEach((item, index) => {
+        const row = document.createElement('div');
+        row.className = 'p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-3';
+        row.innerHTML = `
+          <div class="flex items-center justify-between gap-3 border-b border-slate-200 pb-2.5">
+            <div class="flex items-center gap-2.5">
+              <span class="w-6 h-6 rounded-lg bg-amber-500/20 text-amber-700 font-mono text-xs font-bold flex items-center justify-center">#${index + 1}</span>
+              <span class="text-xs font-bold text-slate-800">${item.nameEn}</span>
+              <span class="text-xs font-urdu font-bold text-amber-600" dir="rtl">${item.nameUr}</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <button onclick="deleteAdminDish('${item.id}')" class="px-2.5 py-1 rounded-lg bg-rose-100 hover:bg-rose-200 text-rose-700 text-[11px] font-bold cursor-pointer">
+                Delete
+              </button>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-4 gap-3 text-xs">
+            <div>
+              <label class="block font-bold text-slate-600 mb-0.5">Name (English)</label>
+              <input type="text" value="${item.nameEn}" onchange="updateDishField('${item.id}', 'nameEn', this.value)" class="w-full px-3 py-1.5 rounded-xl border border-slate-300 font-semibold">
+            </div>
+            <div>
+              <label class="block font-bold text-slate-600 mb-0.5 font-urdu" dir="rtl">نام (اردو)</label>
+              <input type="text" value="${item.nameUr}" onchange="updateDishField('${item.id}', 'nameUr', this.value)" class="w-full px-3 py-1.5 rounded-xl border border-slate-300 text-right font-urdu font-semibold">
+            </div>
+            <div>
+              <label class="block font-bold text-slate-600 mb-0.5">Full Price (Max Rs. 3500)</label>
+              <input type="number" min="0" max="3500" value="${item.prices.full}" onchange="updateDishPrice('${item.id}', 'full', this.value)" class="w-full px-3 py-1.5 rounded-xl border border-slate-300 font-mono font-bold">
+            </div>
+            <div>
+              <label class="block font-bold text-slate-600 mb-0.5">Half Price (If Portion)</label>
+              <input type="number" min="0" max="3500" value="${item.prices.half !== undefined ? item.prices.half : ''}" placeholder="N/A" onchange="updateDishPrice('${item.id}', 'half', this.value)" class="w-full px-3 py-1.5 rounded-xl border border-slate-300 font-mono font-bold">
+            </div>
+          </div>
+        `;
+        container.appendChild(row);
+      });
+    }
+
+    function updateDishField(dishId, field, value) {
+      const dish = appState.menuItems.find(m => m.id === dishId);
+      if (dish) {
+        dish[field] = value;
+        saveAllChangesToStorage();
+        renderCatalog();
+      }
+    }
+
+    function updateDishPrice(dishId, type, rawVal) {
+      const dish = appState.menuItems.find(m => m.id === dishId);
+      if (!dish) return;
+      const num = Math.min(Math.max(Number(rawVal) || 0, 0), 3500);
+      if (type === 'full') {
+        dish.prices.full = num;
+      } else {
+        if (num > 0) {
+          dish.hasPortions = true;
+          dish.prices.half = num;
+        } else {
+          delete dish.prices.half;
+          dish.hasPortions = false;
+        }
+      }
+      saveAllChangesToStorage();
+      renderCatalog();
+    }
+
+    function deleteAdminDish(dishId) {
+      if (appState.menuItems.length <= 1) {
+        alert('Catalog must contain at least 1 dish.');
+        return;
+      }
+      if (!confirm('Are you sure you want to delete this dish?')) return;
+      appState.menuItems = appState.menuItems.filter(m => m.id !== dishId);
+      saveAllChangesToStorage();
+      renderCatalog();
+      renderAdminDishesGrid();
+    }
+
+    function exitAdminView() {
+      document.getElementById('admin-standalone-view').classList.add('hidden');
+      document.getElementById('admin-standalone-view').classList.remove('flex');
+      document.getElementById('storefront-view').classList.remove('hidden');
+      window.scrollTo(0, 0);
+    }
+
+    function saveAdminToken() {
+      const val = document.getElementById('admin-token-input').value.trim();
+      if (!val) return;
+      appState.adminPasswordToken = val;
+      saveAllChangesToStorage();
+      alert(`Security passcode token updated to: ${val}`);
+    }
+
+    // 8. Add New Dish Component Engine
+    let uploadedDishImageB64 = '/src/assets/images/dish_chicken_sajji_1790248406038.jpg';
+
+    function toggleHalfPriceInput() {
+      const val = document.getElementById('new-dish-portions').value;
+      const box = document.getElementById('half-price-container');
+      if (val === 'dual') {
+        box.classList.remove('hidden');
+      } else {
+        box.classList.add('hidden');
+      }
+    }
+
+    // Drag and drop image upload
+    const dropZone = document.getElementById('dish-drop-zone');
+    const fileInput = document.getElementById('new-dish-file-input');
+
+    dropZone.onclick = () => fileInput.click();
+
+    fileInput.onchange = (e) => {
+      if (e.target.files && e.target.files[0]) {
+        processUploadedImage(e.target.files[0]);
+      }
+    };
+
+    dropZone.ondragover = (e) => { e.preventDefault(); dropZone.classList.add('border-amber-500'); };
+    dropZone.ondragleave = () => { dropZone.classList.remove('border-amber-500'); };
+    dropZone.ondrop = (e) => {
+      e.preventDefault();
+      dropZone.classList.remove('border-amber-500');
+      if (e.dataTransfer.files && e.dataTransfer.files[0]) {
+        processUploadedImage(e.dataTransfer.files[0]);
+      }
+    };
+
+    function processUploadedImage(file) {
+      const reader = new FileReader();
+      reader.onload = () => {
+        uploadedDishImageB64 = reader.result;
+        document.getElementById('new-dish-img-preview').src = uploadedDishImageB64;
+      };
+      reader.readAsDataURL(file);
+    }
+
+    function handleAddNewDish(e) {
+      e.preventDefault();
+      const nameEn = document.getElementById('new-dish-name-en').value.trim();
+      const nameUr = document.getElementById('new-dish-name-ur').value.trim();
+      const categoryId = document.getElementById('new-dish-cat').value;
+      const menuGroup = document.getElementById('new-dish-group').value;
+      const portionType = document.getElementById('new-dish-portions').value;
+      const fullPrice = Number(document.getElementById('new-dish-full-price').value) || 1200;
+      const halfPrice = Number(document.getElementById('new-dish-half-price').value) || 700;
+      const descEn = document.getElementById('new-dish-desc-en').value.trim() || 'Traditional special recipe.';
+      const descUr = document.getElementById('new-dish-desc-ur').value.trim() || 'روایتی خاص ترکیب۔';
+
+      const newDish = {
+        id: `dish-custom-${Date.now()}`,
+        nameEn,
+        nameUr,
+        categoryId,
+        menuGroup,
+        descriptionEn: descEn,
+        descriptionUr: descUr,
+        image: uploadedDishImageB64,
+        hasPortions: portionType === 'dual',
+        prices: {
+          full: fullPrice,
+          ...(portionType === 'dual' ? { half: halfPrice } : {})
+        },
+        selectedPortion: 'full'
+      };
+
+      appState.menuItems.unshift(newDish);
+      saveAllChangesToStorage();
+      renderCatalog();
+      alert(`✓ Successfully added "${nameEn}" to the live catalog!`);
+      e.target.reset();
+    }
+
+    // Initialize application
+    window.onload = () => {
+      renderCatalog();
+      renderLandmarks();
+      renderCartUI();
+    };
+  </script>
+</body>
+</html>
